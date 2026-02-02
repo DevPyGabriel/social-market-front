@@ -1,6 +1,6 @@
 import { Icons } from "../Icons";
 
-export const Guarantee = ({ guarantee, visible = true }) => {
+export const Guarantee = ({ guarantee = 'Garantia', visible = true }) => {
   if (!visible) return null;
 
   return (
