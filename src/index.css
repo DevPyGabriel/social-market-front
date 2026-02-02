@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+
+@theme {
+  --font-figtree: 'Figtree', 'system UI' ,sans-serif;
+
+  /* Colors Light */
+  --color-item-bg: hsl(0 0% 92% / 1);
+  --color-card-bg: hsl(0 0% 92% / 1);
+  --color-category-bg: hsl(0 0% 0% / 1);
+  --color-primary-text: hsl(0 0% 8% / 1);
+  --color-primary-text-alt: hsl(0 0% 99% / 1);
+  --color-secondary-text: hsl(0 0% 99% / 1);
+  --color-soft-primary: hsl(0 0% 45% / 1);
+  --color-accent-blue: hsl(205 96% 52% / 1);
+  --color-header-bg: hsl(0 0% 0% / 1);
+  --color-bg: hsl(0 0% 99% / 1);
+
+  /* Colors Dark */
+  --color-item-dark: hsl(0 0% 0% / 1);
+  --color-card-dark: hsl(0 0% 11% / 1);
+  --color-category-bg-dark: hsl(0 0% 0% / 1);
+  --color-primary-text-dark: hsl(0 0% 99% / 1);
+  --color-primary-text-alt-dark: hsl(0 0% 8% / 1);
+  --color-secondary-text-dark: hsl(0 0% 8% / 1);
+  --color-soft-primary-dark: hsl(0 0% 55% / 1);
+  --color-header-bg-dark: hsl(0 0% 11% / 1);
+  --color-dark: hsl(0 0% 8% / 1);
+
+  /* Breakpoints */
+  --breakpoint-2xs: 380px;
+  --breakpoint-xs: 480px;
+}
+
+.searchbar-icon::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='gray'%3E%3Cpath fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.54-10.88a.75.75 0 00-1.06-1.06L10 8.94 7.52 6.46a.75.75 0 10-1.06 1.06L8.94 10l-2.48 2.48a.75.75 0 101.06 1.06L10 11.06l2.48 2.48a.75.75 0 101.06-1.06L11.06 10l2.48-2.48z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-size: contain;
+}
+
+.searchbar-active::placeholder {
+  color: transparent;
+}
